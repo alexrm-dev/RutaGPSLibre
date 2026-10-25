@@ -1,0 +1,17 @@
+{
+  "version": 8,
+  "name": "Ruta GPS Libre - mapa en linea",
+  "sources": {
+    "openstreetmap": {
+      "type": "raster",
+      "tiles": ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+      "tileSize": 256,
+      "minzoom": 0,
+      "maxzoom": 19,
+      "attribution": "© OpenStreetMap contributors"
+    }
+  },
+  "layers": [
+    { "id": "base", "type": "raster", "source": "openstreetmap", "minzoom": 0, "maxzoom": 22 }
+  ]
+}
